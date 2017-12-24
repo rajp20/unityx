@@ -1,0 +1,42 @@
+{
+  "name": "Unity X",
+  "version": "1.0.0",
+  "description": "Unity X Start Up",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "cross-env NODE_ENV=development nodemon start --color=true",
+    "qa": "cross-env NODE_ENV=development nodemon start --color=true",
+    "prod": "cross-env NODE_ENV=production nodemon start --color=true"
+  },
+  "engines": {
+    "node": ">= 7.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cross-env": "^5.1.1",
+    "express": "^4.16.2",
+    "express-subdomain": "^1.0.5",
+    "nconf": "^0.9.1",
+    "rootpath": "^0.1.2",
+    "slack-node": "^0.1.8",
+    "socket.io-client": "^2.0.4",
+    "swagger-ui-express": "^2.0.10",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajp20/unityx.git"
+  },
+  "keywords": [
+    "Unity"
+  ],
+  "author": "Raj Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surveysampling/wire-project-api/issues"
+  },
+  "homepage": "https://github.com/surveysampling/wire-project-api#readme"
+}

@@ -1,0 +1,8 @@
+{
+  "server_dns_name": "localhost",
+  "http_port": 9020,
+  "log_level": "debug",
+  "wire_api_server":"https://qa-websvc.surveysampling.com",
+  "slack_token": "xoxp-236950744498-237163594517-266160238450-2635d342c4eabc6640ca5fc29174ebfd",
+  "socket_io_servers": [ "http://utpotsphoenix01:8080", "http://utpotscebu01:8080" ]
+}
