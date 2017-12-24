@@ -1,11 +1,11 @@
 require('rootpath')();
-const logger      = require('logger/logger');
+const logger      = require('logger/logger')('server.log');
 const express     = require('express');
 const config      = require('nconf');
 const bodyParser  = require('body-parser');
 const subdomain   = require('express-subdomain');
 const rajpatelsub = require('src/routes/rajpatel/rajpatel');
-const home        = require('src/routes/home/home');
+const home        = require('src/routes/root/root');
 
 
 process.on('uncaughtException', function (err) {
@@ -35,14 +35,19 @@ app.listen(http_port);
 
 app.use(bodyParser.json());
 
-app.use('/home', home);
+// Subdomains routing
 app.use(subdomain('rajpatel', rajpatelsub));
+app.use('/', home);
 
 logger.info('Server started.');
 logger.info(`Server DNS:\t\t${server_dns_name}`);
 logger.info(`Server Port:\t\t${http_port}`);
 logger.info(`Log Level:\t\t${logger_level}`);
 logger.info(``);
+logger.info(`Sub-Domains`);
+logger.info(`rajpatel.${server_dns_name}`);
+logger.info(``);
+
 
 
 module.exports = app;

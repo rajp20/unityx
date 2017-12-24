@@ -1,0 +1,133 @@
+2017-12-24T22:37:08.416Z - info: Server started.
+2017-12-24T22:37:08.417Z - info: Server DNS:		localhost
+2017-12-24T22:37:08.417Z - info: Server Port:		8080
+2017-12-24T22:37:08.417Z - info: Log Level:		debug
+2017-12-24T22:37:08.417Z - info:  
+2017-12-24T22:37:33.052Z - info: Server started.
+2017-12-24T22:37:33.052Z - info: Server DNS:		localhost
+2017-12-24T22:37:33.052Z - info: Server Port:		8080
+2017-12-24T22:37:33.053Z - info: Log Level:		debug
+2017-12-24T22:37:33.053Z - info:  
+2017-12-24T22:37:59.915Z - info: Server started.
+2017-12-24T22:37:59.916Z - info: Server DNS:		localhost
+2017-12-24T22:37:59.916Z - info: Server Port:		8080
+2017-12-24T22:37:59.916Z - info: Log Level:		debug
+2017-12-24T22:37:59.916Z - info:  
+2017-12-24T22:39:27.277Z - info: Server started.
+2017-12-24T22:39:27.278Z - info: Server DNS:		localhost
+2017-12-24T22:39:27.278Z - info: Server Port:		8080
+2017-12-24T22:39:27.278Z - info: Log Level:		debug
+2017-12-24T22:39:27.278Z - info:  
+2017-12-24T22:39:27.278Z - info:  
+2017-12-24T22:39:53.132Z - info: Server started.
+2017-12-24T22:39:53.133Z - info: Server DNS:		localhost
+2017-12-24T22:39:53.133Z - info: Server Port:		8080
+2017-12-24T22:39:53.133Z - info: Log Level:		debug
+2017-12-24T22:39:53.133Z - info:  
+2017-12-24T22:39:53.133Z - info: Sub-Domains
+2017-12-24T22:39:53.133Z - info:  
+2017-12-24T22:39:53.133Z - info:  
+2017-12-24T22:40:46.898Z - info: Server started.
+2017-12-24T22:40:46.899Z - info: Server DNS:		test.io
+2017-12-24T22:40:46.899Z - info: Server Port:		8080
+2017-12-24T22:40:46.899Z - info: Log Level:		debug
+2017-12-24T22:40:46.899Z - info:  
+2017-12-24T22:40:46.899Z - info: Sub-Domains
+2017-12-24T22:40:46.899Z - info: rajpatel.test.io
+2017-12-24T22:40:46.899Z - info:  
+2017-12-24T22:41:09.062Z - info: Server started.
+2017-12-24T22:41:09.062Z - info: Server DNS:		test.io
+2017-12-24T22:41:09.063Z - info: Server Port:		8080
+2017-12-24T22:41:09.063Z - info: Log Level:		debug
+2017-12-24T22:41:09.063Z - info:  
+2017-12-24T22:41:09.063Z - info: Sub-Domains
+2017-12-24T22:41:09.063Z - info: rajpatel.test.io
+2017-12-24T22:41:09.063Z - info:  
+2017-12-24T22:41:39.836Z - info: Server started.
+2017-12-24T22:41:39.837Z - info: Server DNS:		test.io
+2017-12-24T22:41:39.837Z - info: Server Port:		8080
+2017-12-24T22:41:39.837Z - info: Log Level:		debug
+2017-12-24T22:41:39.837Z - info:  
+2017-12-24T22:41:39.837Z - info: Sub-Domains
+2017-12-24T22:41:39.837Z - info: rajpatel.test.io
+2017-12-24T22:41:39.837Z - info:  
+2017-12-24T22:42:03.034Z - info: Server started.
+2017-12-24T22:42:03.035Z - info: Server DNS:		test.io
+2017-12-24T22:42:03.035Z - info: Server Port:		8080
+2017-12-24T22:42:03.035Z - info: Log Level:		debug
+2017-12-24T22:42:03.035Z - info:  
+2017-12-24T22:42:03.035Z - info: Sub-Domains
+2017-12-24T22:42:03.035Z - info: rajpatel.test.io
+2017-12-24T22:42:03.036Z - info:  
+2017-12-24T22:42:59.795Z - info: Server started.
+2017-12-24T22:42:59.796Z - info: Server DNS:		test.io
+2017-12-24T22:42:59.796Z - info: Server Port:		8080
+2017-12-24T22:42:59.796Z - info: Log Level:		debug
+2017-12-24T22:42:59.796Z - info:  
+2017-12-24T22:42:59.797Z - info: Sub-Domains
+2017-12-24T22:42:59.797Z - info: rajpatel.test.io
+2017-12-24T22:42:59.797Z - info:  
+2017-12-24T22:43:52.626Z - info: Server started.
+2017-12-24T22:43:52.627Z - info: Server DNS:		test.io
+2017-12-24T22:43:52.627Z - info: Server Port:		8080
+2017-12-24T22:43:52.627Z - info: Log Level:		debug
+2017-12-24T22:43:52.627Z - info:  
+2017-12-24T22:43:52.627Z - info: Sub-Domains
+2017-12-24T22:43:52.627Z - info: rajpatel.test.io
+2017-12-24T22:43:52.627Z - info:  
+2017-12-24T22:44:00.929Z - info: Server started.
+2017-12-24T22:44:00.929Z - info: Server DNS:		test.io
+2017-12-24T22:44:00.929Z - info: Server Port:		8080
+2017-12-24T22:44:00.930Z - info: Log Level:		debug
+2017-12-24T22:44:00.930Z - info:  
+2017-12-24T22:44:00.930Z - info: Sub-Domains
+2017-12-24T22:44:00.930Z - info: rajpatel.test.io
+2017-12-24T22:44:00.930Z - info:  
+2017-12-24T22:44:14.385Z - info: Server started.
+2017-12-24T22:44:14.386Z - info: Server DNS:		test.io
+2017-12-24T22:44:14.386Z - info: Server Port:		8080
+2017-12-24T22:44:14.386Z - info: Log Level:		debug
+2017-12-24T22:44:14.387Z - info:  
+2017-12-24T22:44:14.387Z - info: Sub-Domains
+2017-12-24T22:44:14.387Z - info: rajpatel.test.io
+2017-12-24T22:44:14.387Z - info:  
+2017-12-24T22:44:42.866Z - info: Server started.
+2017-12-24T22:44:42.866Z - info: Server DNS:		test.io
+2017-12-24T22:44:42.866Z - info: Server Port:		8080
+2017-12-24T22:44:42.866Z - info: Log Level:		debug
+2017-12-24T22:44:42.867Z - info:  
+2017-12-24T22:44:42.867Z - info: Sub-Domains
+2017-12-24T22:44:42.867Z - info: rajpatel.test.io
+2017-12-24T22:44:42.867Z - info:  
+2017-12-24T22:45:08.485Z - info: Server started.
+2017-12-24T22:45:08.486Z - info: Server DNS:		test.io
+2017-12-24T22:45:08.486Z - info: Server Port:		8080
+2017-12-24T22:45:08.486Z - info: Log Level:		debug
+2017-12-24T22:45:08.486Z - info:  
+2017-12-24T22:45:08.486Z - info: Sub-Domains
+2017-12-24T22:45:08.486Z - info: rajpatel.test.io
+2017-12-24T22:45:08.486Z - info:  
+2017-12-24T22:45:44.062Z - info: Server started.
+2017-12-24T22:45:44.063Z - info: Server DNS:		test.io
+2017-12-24T22:45:44.063Z - info: Server Port:		8080
+2017-12-24T22:45:44.063Z - info: Log Level:		debug
+2017-12-24T22:45:44.063Z - info:  
+2017-12-24T22:45:44.063Z - info: Sub-Domains
+2017-12-24T22:45:44.063Z - info: rajpatel.test.io
+2017-12-24T22:45:44.063Z - info:  
+2017-12-24T22:46:11.495Z - info: Server started.
+2017-12-24T22:46:11.496Z - info: Server DNS:		test.io
+2017-12-24T22:46:11.496Z - info: Server Port:		8080
+2017-12-24T22:46:11.496Z - info: Log Level:		debug
+2017-12-24T22:46:11.496Z - info:  
+2017-12-24T22:46:11.496Z - info: Sub-Domains
+2017-12-24T22:46:11.496Z - info: rajpatel.test.io
+2017-12-24T22:46:11.496Z - info:  
+2017-12-24T22:46:20.883Z - info: Server started.
+2017-12-24T22:46:20.884Z - info: Server DNS:		test.io
+2017-12-24T22:46:20.884Z - info: Server Port:		8080
+2017-12-24T22:46:20.884Z - info: Log Level:		debug
+2017-12-24T22:46:20.885Z - info:  
+2017-12-24T22:46:20.885Z - info: Sub-Domains
+2017-12-24T22:46:20.885Z - info: rajpatel.test.io
+2017-12-24T22:46:20.885Z - info:  
