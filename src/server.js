@@ -4,6 +4,8 @@ const express     = require('express');
 const config      = require('nconf');
 const bodyParser  = require('body-parser');
 const subdomain   = require('express-subdomain');
+const rajpatelsub = require('src/routes/rajpatel/rajpatel');
+const home        = require('src/routes/home/home');
 
 
 process.on('uncaughtException', function (err) {
@@ -27,28 +29,19 @@ const logger_level = config.get('log_level');
 const server_dns_name = config.get('server_dns_name');
 const http_port = config.get('http_port');
 
-const slack_integration = config.get('slack_integration');
-
-const socket_io_servers = config.get('socket_io_servers');
-
-if (!socket_io_servers) {
-  logger.crit(`No Socket.io server defined in the config.`);
-  return 1;
-}
-
 let app = express();
 
 app.listen(http_port);
 
 app.use(bodyParser.json());
 
+app.use('/home', home);
+app.use(subdomain('rajpatel', rajpatelsub));
+
 logger.info('Server started.');
 logger.info(`Server DNS:\t\t${server_dns_name}`);
 logger.info(`Server Port:\t\t${http_port}`);
 logger.info(`Log Level:\t\t${logger_level}`);
-logger.info(``);
-logger.info(`[Socket.io Info]`);
-logger.info(`Socket.io Servers:\t${socket_io_servers}`);
 logger.info(``);
 
 

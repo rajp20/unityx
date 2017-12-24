@@ -8,7 +8,7 @@ var router = express.Router();
 
 //api specific routes
 router.get('/', function(req, res) {
-  res.send('hello world');
+  res.send('test');
 });
 
 module.exports = router;

@@ -3084,3 +3084,73 @@ ORD-298968-D1N7, ok=true
 2017-12-02T00:27:05.457Z - debug: Getting project information. [URL: https://qa-websvc.surveysampling.com/wireapi/Project?projectNumber=59210004]
 2017-12-02T00:27:05.485Z - info: Checking if channel already exists. [Wire Project #: 59210004]
 2017-12-02T00:27:05.485Z - info: Channel found, checking if its archived.
+2017-12-24T07:24:19.071Z - info: Server started.
+2017-12-24T07:24:19.072Z - info: Server DNS:		localhost
+2017-12-24T07:24:19.072Z - info: Server Port:		8080
+2017-12-24T07:24:19.072Z - info: Log Level:		debug
+2017-12-24T07:24:19.072Z - info:  
+2017-12-24T07:27:04.136Z - info: Server started.
+2017-12-24T07:27:04.137Z - info: Server DNS:		localhost
+2017-12-24T07:27:04.137Z - info: Server Port:		8080
+2017-12-24T07:27:04.137Z - info: Log Level:		debug
+2017-12-24T07:27:04.137Z - info:  
+2017-12-24T07:27:21.149Z - info: Server started.
+2017-12-24T07:27:21.150Z - info: Server DNS:		localhost
+2017-12-24T07:27:21.150Z - info: Server Port:		8080
+2017-12-24T07:27:21.150Z - info: Log Level:		debug
+2017-12-24T07:27:21.150Z - info:  
+2017-12-24T07:27:29.192Z - info: Server started.
+2017-12-24T07:27:29.192Z - info: Server DNS:		localhost
+2017-12-24T07:27:29.193Z - info: Server Port:		8080
+2017-12-24T07:27:29.193Z - info: Log Level:		debug
+2017-12-24T07:27:29.193Z - info:  
+2017-12-24T07:29:14.769Z - info: Server started.
+2017-12-24T07:29:14.770Z - info: Server DNS:		localhost
+2017-12-24T07:29:14.770Z - info: Server Port:		8080
+2017-12-24T07:29:14.770Z - info: Log Level:		debug
+2017-12-24T07:29:14.770Z - info:  
+2017-12-24T07:29:56.468Z - info: Server started.
+2017-12-24T07:29:56.469Z - info: Server DNS:		localhost
+2017-12-24T07:29:56.469Z - info: Server Port:		8080
+2017-12-24T07:29:56.469Z - info: Log Level:		debug
+2017-12-24T07:29:56.469Z - info:  
+2017-12-24T07:30:27.304Z - info: Server started.
+2017-12-24T07:30:27.305Z - info: Server DNS:		localhost
+2017-12-24T07:30:27.305Z - info: Server Port:		8080
+2017-12-24T07:30:27.305Z - info: Log Level:		debug
+2017-12-24T07:30:27.305Z - info:  
+2017-12-24T07:30:41.052Z - info: Server started.
+2017-12-24T07:30:41.052Z - info: Server DNS:		localhost
+2017-12-24T07:30:41.052Z - info: Server Port:		8080
+2017-12-24T07:30:41.052Z - info: Log Level:		debug
+2017-12-24T07:30:41.052Z - info:  
+2017-12-24T07:35:40.364Z - info: Server started.
+2017-12-24T07:35:40.364Z - info: Server DNS:		localhost
+2017-12-24T07:35:40.364Z - info: Server Port:		8080
+2017-12-24T07:35:40.365Z - info: Log Level:		debug
+2017-12-24T07:35:40.365Z - info:  
+2017-12-24T07:35:45.451Z - info: Server started.
+2017-12-24T07:35:45.452Z - info: Server DNS:		localhost
+2017-12-24T07:35:45.452Z - info: Server Port:		8080
+2017-12-24T07:35:45.452Z - info: Log Level:		debug
+2017-12-24T07:35:45.452Z - info:  
+2017-12-24T07:36:10.112Z - info: Server started.
+2017-12-24T07:36:10.113Z - info: Server DNS:		localhost
+2017-12-24T07:36:10.113Z - info: Server Port:		8080
+2017-12-24T07:36:10.113Z - info: Log Level:		debug
+2017-12-24T07:36:10.114Z - info:  
+2017-12-24T07:36:17.015Z - info: Server started.
+2017-12-24T07:36:17.016Z - info: Server DNS:		localhost
+2017-12-24T07:36:17.016Z - info: Server Port:		8080
+2017-12-24T07:36:17.016Z - info: Log Level:		debug
+2017-12-24T07:36:17.016Z - info:  
+2017-12-24T07:36:24.454Z - info: Server started.
+2017-12-24T07:36:24.455Z - info: Server DNS:		localhost
+2017-12-24T07:36:24.455Z - info: Server Port:		8080
+2017-12-24T07:36:24.455Z - info: Log Level:		debug
+2017-12-24T07:36:24.455Z - info:  
+2017-12-24T07:40:53.445Z - info: Server started.
+2017-12-24T07:40:53.446Z - info: Server DNS:		localhost
+2017-12-24T07:40:53.446Z - info: Server Port:		8080
+2017-12-24T07:40:53.446Z - info: Log Level:		debug
+2017-12-24T07:40:53.446Z - info:  
