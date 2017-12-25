@@ -33,8 +33,6 @@ let app = express();
 
 app.listen(http_port);
 
-app.use(bodyParser.json());
-
 // Subdomains routing
 app.use(subdomain('rajpatel', rajpatelsub));
 app.use('/', home);
@@ -48,6 +46,6 @@ logger.info(`Sub-Domains`);
 logger.info(`rajpatel.${server_dns_name}`);
 logger.info(``);
 
-
+app.use(bodyParser.json());
 
 module.exports = app;
