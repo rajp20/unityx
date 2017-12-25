@@ -1,5 +1,5 @@
 {
-  "server_dns_name": "test.io",
+  "server_dns_name": "localhost.dev",
   "http_port": 8080,
   "log_level": "debug"
 }

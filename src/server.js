@@ -5,6 +5,7 @@ const config      = require('nconf');
 const bodyParser  = require('body-parser');
 const subdomain   = require('express-subdomain');
 const rajpatelsub = require('src/routes/rajpatel/rajpatel');
+const jakemaschoff = require('src/routes/jakemaschoff/jakemaschoff');
 const home        = require('src/routes/root/root');
 
 
@@ -35,6 +36,7 @@ app.listen(http_port);
 
 // Subdomains routing
 app.use(subdomain('rajpatel', rajpatelsub));
+app.use(subdomain('jakemaschoff', jakemaschoff));
 app.use('/', home);
 
 logger.info('Server started.');
@@ -44,6 +46,7 @@ logger.info(`Log Level:\t\t${logger_level}`);
 logger.info(``);
 logger.info(`Sub-Domains`);
 logger.info(`rajpatel.${server_dns_name}`);
+logger.info(`jakemaschoff.${server_dns_name}`);
 logger.info(``);
 
 app.use(bodyParser.json());

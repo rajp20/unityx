@@ -995,3 +995,28 @@
 2017-12-25T04:46:59.249Z - info: Sub-Domains
 2017-12-25T04:46:59.249Z - info: rajpatel.test.io
 2017-12-25T04:46:59.249Z - info:  
+2017-12-25T05:55:30.279Z - info: Server started.
+2017-12-25T05:55:30.280Z - info: Server DNS:		test.io
+2017-12-25T05:55:30.280Z - info: Server Port:		8080
+2017-12-25T05:55:30.280Z - info: Log Level:		debug
+2017-12-25T05:55:30.280Z - info:  
+2017-12-25T05:55:30.280Z - info: Sub-Domains
+2017-12-25T05:55:30.280Z - info: rajpatel.test.io
+2017-12-25T05:55:30.280Z - info:  
+2017-12-25T05:56:41.872Z - info: Server started.
+2017-12-25T05:56:41.873Z - info: Server DNS:		test.io
+2017-12-25T05:56:41.873Z - info: Server Port:		8080
+2017-12-25T05:56:41.873Z - info: Log Level:		debug
+2017-12-25T05:56:41.873Z - info:  
+2017-12-25T05:56:41.873Z - info: Sub-Domains
+2017-12-25T05:56:41.873Z - info: rajpatel.test.io
+2017-12-25T05:56:41.873Z - info:  
+2017-12-25T05:59:15.015Z - info: Server started.
+2017-12-25T05:59:15.016Z - info: Server DNS:		localhost.dev
+2017-12-25T05:59:15.016Z - info: Server Port:		8080
+2017-12-25T05:59:15.016Z - info: Log Level:		debug
+2017-12-25T05:59:15.017Z - info:  
+2017-12-25T05:59:15.017Z - info: Sub-Domains
+2017-12-25T05:59:15.017Z - info: rajpatel.localhost.dev
+2017-12-25T05:59:15.017Z - info: jakemaschoff.localhost.dev
+2017-12-25T05:59:15.017Z - info:  
