@@ -74,17 +74,19 @@ process.on('uncaughtException', function (err) {
 
 let app = express();
 
-//app.listen(http_port);
-
-// handles acme-challenge and redirects to https
-require('http').createServer(lex.middleware(require('redirect-https')())).listen(http_port, function () {
-  logger.debug("Listening for ACME http-01 challenges on", this.address());
-});
+if (env == "development") {
+  app.listen(http_port);
+} else {
+  // handles acme-challenge and redirects to https
+  require('http').createServer(lex.middleware(require('redirect-https')())).listen(http_port, function () {
+    logger.debug("Listening for ACME http-01 challenges on", this.address());
+  });
 
 // handles your app
-require('https').createServer(lex.httpsOptions, lex.middleware(app)).listen(https_port, function () {
-  logger.debug("Listening for ACME tls-sni-01 challenges and serve app on", this.address());
-});
+  require('https').createServer(lex.httpsOptions, lex.middleware(app)).listen(https_port, function () {
+    logger.debug("Listening for ACME tls-sni-01 challenges and serve app on", this.address());
+  });
+}
 
 // Subdomains routing
 app.use(subdomain('rajpatel', rajpatelsub));
