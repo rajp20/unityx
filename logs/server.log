@@ -979,3 +979,11 @@
 2017-12-25T04:36:44.697Z - info: Sub-Domains
 2017-12-25T04:36:44.697Z - info: rajpatel.test.io
 2017-12-25T04:36:44.698Z - info:  
+2017-12-25T04:41:27.531Z - info: Server started.
+2017-12-25T04:41:27.532Z - info: Server DNS:		test.io
+2017-12-25T04:41:27.532Z - info: Server Port:		8080
+2017-12-25T04:41:27.532Z - info: Log Level:		debug
+2017-12-25T04:41:27.532Z - info:  
+2017-12-25T04:41:27.532Z - info: Sub-Domains
+2017-12-25T04:41:27.532Z - info: rajpatel.test.io
+2017-12-25T04:41:27.532Z - info:  
