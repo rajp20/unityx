@@ -7,7 +7,11 @@ const bodyParser  = require('body-parser');
 var router = express.Router();
 
 router.get('/', function(req, res) {
-  res.sendFile(__dirname + '/src/index.html');
+  res.sendFile(__dirname + '/src/index/index.html');
+});
+
+router.get('/index/index.css', function(req, res) {
+  res.sendFile(__dirname + '/src/index/index.css');
 });
 
 module.exports = router;
