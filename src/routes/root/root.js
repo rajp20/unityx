@@ -14,5 +14,9 @@ router.get('/index/index.css', function(req, res) {
   res.sendFile(__dirname + '/src/index/index.css');
 });
 
+router.get('/index/index.js', function(req, res) {
+  res.sendFile(__dirname + '/src/index/index.js');
+});
+
 module.exports = router;
 
