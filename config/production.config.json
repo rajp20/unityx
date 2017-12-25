@@ -1,5 +1,7 @@
 {
   "server_dns_name": "unityx.io",
   "http_port": 8080,
-  "log_level": "debug"
+  "https_port": 10443,
+  "log_level": "debug",
+  "letsencrypt_server": "https://acme-v01.api.letsencrypt.org/directory"
 }
