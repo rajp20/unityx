@@ -8,7 +8,7 @@ var router = express.Router();
 
 //api specific routes
 router.get('/', function(req, res) {
-  res.sendFile(__dirname + '/src/index/index.html');
+  res.send('hello world');
 });
 
 module.exports = router;
