@@ -6,6 +6,7 @@ const bodyParser  = require('body-parser');
 const subdomain   = require('express-subdomain');
 const rajpatelsub = require('src/routes/rajpatel/rajpatel');
 const jakemaschoff = require('src/routes/jakemaschoff/jakemaschoff');
+const melvinbosnjak = require('src/routes/melvinbosnjak/melvinbosnjak');
 const home        = require('src/routes/root/root');
 
 'use strict';
@@ -13,7 +14,7 @@ const home        = require('src/routes/root/root');
 const env = process.env.NODE_ENV;
 
 if (!env) {
-  logger.crit(`You must define an environment to run the slack api app.`);
+  logger.crit(`You must define an environment to run unityx.`);
   return 1;
 }
 
@@ -82,7 +83,7 @@ if (env == "development") {
     logger.debug("Listening for ACME http-01 challenges on", this.address());
   });
 
-// handles your app
+  // handles your app
   require('https').createServer(lex.httpsOptions, lex.middleware(app)).listen(https_port, function () {
     logger.debug("Listening for ACME tls-sni-01 challenges and serve app on", this.address());
   });
@@ -91,6 +92,7 @@ if (env == "development") {
 // Subdomains routing
 app.use(subdomain('rajpatel', rajpatelsub));
 app.use(subdomain('jakemaschoff', jakemaschoff));
+app.use(subdomain('melvinbosnjak', melvinbosnjak));
 app.use('/', home);
 app.use(bodyParser.json());
 
@@ -103,6 +105,7 @@ logger.info(``);
 logger.info(`Sub-Domains`);
 logger.info(`rajpatel.${server_dns_name}`);
 logger.info(`jakemaschoff.${server_dns_name}`);
+logger.info(`melvinbosnjak.${server_dns_name}`);
 logger.info(``);
 
 module.exports = app;

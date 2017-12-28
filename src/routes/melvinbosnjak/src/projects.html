@@ -1,0 +1,145 @@
+<html>
+<head>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+	<!-- Roboto font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,700" rel="stylesheet">
+
+	<!-- Bootsrap JavaScript/JQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Link to the stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- the favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+
+	<title>Melvin Bosnjak | Projects</title>
+
+	<!-- Added Javascript -->
+	<script type="text/javascript">
+
+		$( document ).ready(function() {
+    		var windowSize = $(window).width();
+			if (windowSize < 991) {
+				$(".navbar").css("background-color", "black");
+				$(".navbar-collapse").css("background-color", "black");
+				$("#main-text").css("font-size", "57px");
+			} else {
+				$(".navbar").css("background-color", "rgba(0, 0, 0, 0)");
+				$(".navbar-collapse").css("background-color", "rgba(0, 0, 0, 0)");
+				$("#main-text").css("font-size", "75px");
+			}
+		});
+
+		$(window).on("resize", function(e) {
+			var windowSize = $(this).width();
+			if (windowSize < 991) {
+				$(".navbar").css("background-color", "black");
+				$(".navbar-collapse").css("background-color", "black");
+				$("#main-text").css("font-size", "57px");
+			} else {
+				$(".navbar").css("background-color", "rgba(0, 0, 0, 0)");
+				$(".navbar-collapse").css("background-color", "rgba(0, 0, 0, 0)");
+				$("#main-text").css("font-size", "75px");
+			}
+		});
+		
+	</script>
+</head>
+<body class="projects-body">
+
+	<!-- Container for the whole page -->
+	<div class="overlay">
+
+		<!-- The navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark justify-content-between">
+		  <a class="navbar-brand" href="index.html">MELVIN BOSNJAK</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    	  <span class="navbar-toggler-icon"></span>
+  		  </button>
+		  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+		    <ul class="navbar-nav">
+		      <li class="nav-item">
+		        <a class="nav-link" href="aboutme.html">ABOUT ME</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="resume.html">RESUME</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link active" href="projects.html">PROJECTS</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="contact.html">CONTACT</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+
+		<!-- The contents that are front and center -->
+		<div class="projects-heading">
+			<h2 id="main-text">My Projects</h2>
+		</div>
+
+		<div class="body-projects">
+
+				<!-- Spacewars -->
+				<div class="card mb-3">
+				  <img class="card-img-top" src="images/Spacewars.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h4 class="card-title">Space Wars</h4>
+				    <p class="card-text">Space Wars is a multiplayer game that allows many clients to connect at one time. The goal of the game is to eliminate other players and avoid hitting the star in the center. The star has a gravitational pull making the game a little more difficult and interesting. Both the client and the server for this project were programmed in C# using Visual Studio. The network controller makes use of sockets to communicate between client and server. Scores and stats were saved to an SQL database using mySQL.</p>
+				  </div>
+				</div>
+
+				<!-- Spreadsheet -->
+				<div class="card mb-3">
+				  <img class="card-img-top" src="images/Spreadsheet.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h4 class="card-title">Spreadsheet</h4>
+				    <p class="card-text">This application is a graphical user interface that implements the functionality of a spreadsheet such as Excel. It allows users to store strings, numbers, or formulas into each cell. The use of formulas are demonstrated in the image above where the value of the B1 cell is dependent on the values of the A1 and A2. All of the libraries and the GUI were programmed in C# using Visual Studio.</p>
+				  </div>
+				</div>
+
+				<div class="card mb-3">
+				  <img class="card-img-top" src="images/Nexys3.png" alt="Card image cap">
+				  <div class="card-body">
+				    <h4 class="card-title"> Universal Asynchronous Receiver/Transmitter</h4>
+				    <p class="card-text">This circuit can communicate with a standard computer terminal. It is able to accept serial
+					ASCII data from a terminal keyboard (when you press a key on the terminal, serial ASCII data is sent out
+					the serial connection) and collect it into a parallel byte of information. This byte of data will then be
+					sent back to the terminal as serial data so that it is echoed on the terminal screen. Written in Verilog using finite state machines, and embedded to a Nexys3 board using Adept.</p>
+				  </div>
+				</div>
+
+				<div class="card mb-3">
+				  <img class="card-img-top" src="images/SpeakerCircuit.png" alt="Card image cap">
+				  <div class="card-body">
+				    <h4 class="card-title">Speaker Circuit</h4>
+				    <p class="card-text">Calculated, Simulated, Prototyped and Measured a Microphone-Speaker circuit. Designed with a custom BJT Amplifier with a gain of 120, and a dual rail, any voltage, regulated, DC power supply capable of supplying enough current and voltage to operate the microphone and speaker circuit. Simulations using PSPICE.</p>
+				  </div>
+				</div>
+
+				<div class="card mb-3">
+				  <div class="card-body">
+				    <h4 class="card-title">Poker using stochastic sampling</h4>
+				    <p class="card-text">Created a program that computes the odds of getting any specific type of poker hand (based on 5 card or 7 card draws). These were determined with uses of exhaustive comparison and stochastic sampling using a Random number generator. Added a Texas hold 'em feature that stochastically computes the likely-hood a set of two cards will beat another set of two cards. Link to most of my projects is provided.</p>
+				  </div>
+				</div>
+
+				<div style="font-color: rgb(40, 40, 40);" class="footer">
+					<p>208-891-0445 | <a href="mailto: meco0597@gmail.com">meco0597@gmail.com</a> | <a href="https://www.linkedin.com/in/melvin-bosnjak/"><i class="footer-button fa fa-linkedin-square"></i></a></p>
+					<p>Copyright &copy; 2018 Melvin Bosnjak</p>
+				</div>
+		</div>
+
+
+	</div>
+</body>
+</html>

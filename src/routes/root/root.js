@@ -6,16 +6,10 @@ const bodyParser  = require('body-parser');
 
 var router = express.Router();
 
+router.use(express.static(__dirname + '/src'));
+
 router.get('/', function(req, res) {
   res.sendFile(__dirname + '/src/index/index.html');
-});
-
-router.get('/index/index.css', function(req, res) {
-  res.sendFile(__dirname + '/src/index/index.css');
-});
-
-router.get('/index/index.js', function(req, res) {
-  res.sendFile(__dirname + '/src/index/index.js');
 });
 
 module.exports = router;

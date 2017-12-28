@@ -1,5 +1,5 @@
 {
-  "server_dns_name": "localhost.dev",
+  "server_dns_name": "localhost.io",
   "http_port": 8080,
   "https_port": 10443,
   "log_level": "debug",

@@ -1,0 +1,157 @@
+.main-body {
+	background-image: url(/images/Background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.contact-me-body {
+	background-color: black;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+img {
+	max-width: 95%;
+	max-height: 80%;
+	padding-top: 20px;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+.card {
+	width: 70%;
+	margin-right: 15%;
+	margin-left: 15%;
+}
+
+.about-me-body {
+	background-image: url(/images/Circuit.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.projects-body {
+	background-image: url(/images/Circuit.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.footer-button {
+	font-size: 22px;
+}
+
+.footer {
+	padding-top: 10px;
+	text-align: center;
+	color: gray;
+	font-size: 12px;
+}
+
+/* selected link */
+.hover:active {
+	color: white;
+}
+
+.overlay {
+	background-color: rgba(0, 0, 0, 0.65);
+	height: 100%;
+	width: 100%;
+}
+
+.navbar-dark {
+	font-weight: 300;
+	height: 15%;
+	background-color: rgba(0,0,0,0);
+}
+
+#main-footer {
+	margin-top: 18%;
+	color: rgb(195, 195, 195);
+}
+
+.navbar-brand {
+	margin-left: 25px;
+	font-size: 30px;
+	font-weight: 200;
+}
+
+.border-button {
+	color: white;
+	border: 2px solid white;
+	padding: 10px;
+}
+
+.hover:hover {
+	color: black;
+	background-color: white;
+}
+
+.front-and-center {
+	padding-top: 10%;
+	color: white;
+	height: 72%;
+	width: 100%;
+	text-align: center;
+}
+
+#download-resume {
+	font-size: 50px;
+}
+
+.body {
+	background-color: rgb(242, 242, 242);
+	padding-top: 50px;
+	padding-left: 7.5%;
+	padding-right: 7.5%;
+	padding-bottom: 30px;
+}
+
+.body-projects {
+	background-color: rgb(242, 242, 242);
+	padding-left: 7%;
+	padding-right: 7%;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+#black-navbar {
+	background-color: black;
+}
+
+.projects-heading {
+	padding-top: 7%;
+	color: white;
+	height: 30%;
+	width: 90%;
+	text-align: right;
+}
+
+.heading {
+	padding-top: 15%;
+	color: white;
+	height: 45%;
+	width: 90%;
+	text-align: right;
+}
+
+.buttons {
+	margin-top: 25px;
+}
+
+#main-button1 {
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+#main-button2 {
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+#main-text {
+	font-size: 75px;
+}
