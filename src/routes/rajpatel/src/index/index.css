@@ -5,7 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 50vmax;
+  height: 100%;
 }
 
 body::-webkit-scrollbar-track
@@ -67,6 +67,19 @@ ul {
   padding:0;
   position: relative;
   width: 720px;
+}
+
+#menu li {
+  cursor: pointer;
+}
+
+#menu a {
+  transition: font-size 200ms;
+}
+
+.active-nav-bar {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /*Create a horizontal list with spacing*/
@@ -157,13 +170,55 @@ ul li a:hover + .hidden, .hidden:hover {
 }
 
 .content {
-  min-height: 75vh;
+  min-height: 70vh;
   margin: 1vmax;
   color: white;
 }
 
 .content-noshow {
   display: none;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  font-size: 20px;
+}
+
+.skills div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills p {
+  text-align: center;
+  width: 200px;
+  opacity: 0;
+}
+
+/*Latex*/
+.latex sub, .latex sup {
+  text-transform: uppercase;
+}
+
+.latex sub {
+  vertical-align: -0.5ex;
+  margin-left: -0.1667em;
+  margin-right: -0.125em;
+}
+
+.latex, .latex sub {
+  font-size: 1em;
+}
+
+.latex sup {
+  font-size: 0.85em;
+  vertical-align: 0.15em;
+  margin-left: -0.36em;
+  margin-right: -0.15em;
 }
 
 .footer {
@@ -184,9 +239,4 @@ ul li a:hover + .hidden, .hidden:hover {
 .footer a {
   text-decoration: none;
   color: white;
-}
-
-.active-nav-bar {
-  font-weight: bold;
-  font-size: 20px;
 }

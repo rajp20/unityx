@@ -88,7 +88,11 @@ $(document).ready(function(){
 
     if (prev_content != "skills") {
       $('#' + prev_content).fadeOut(500);
-      $('#skills').delay(499).fadeIn(500);
+      $('#skills').delay(499).fadeIn(function () {
+        $("#skills p").each(function(i) {
+          $(this).delay(200 * i).fadeTo(750, 1);
+        });
+      });
     }
 
     prev_content = "skills";
