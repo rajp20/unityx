@@ -90,7 +90,7 @@ $(document).ready(function(){
       $('#' + prev_content).fadeOut(500);
       $('#skills').delay(499).fadeIn(function () {
         $("#skills p").each(function(i) {
-          $(this).delay(200 * i).fadeTo(750, 1);
+          $(this).delay(100 * i).fadeTo(500, 1);
         });
       });
     }
