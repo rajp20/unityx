@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4383dec2-01ec-4434-bf75-cc6fb87c366a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/routes/rajpatel/src/index/index.css" afterPath="$PROJECT_DIR$/src/routes/rajpatel/src/index/index.css" />
+      <change beforePath="$PROJECT_DIR$/src/routes/rajpatel/src/index/index.html" afterPath="$PROJECT_DIR$/src/routes/rajpatel/src/index/index.html" />
       <change beforePath="$PROJECT_DIR$/src/routes/rajpatel/src/index/index.js" afterPath="$PROJECT_DIR$/src/routes/rajpatel/src/index/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -56,18 +59,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/routes/rajpatel/src/index/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+            <state relative-caret-position="1024">
+              <caret line="32" column="6" lean-forward="true" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
               <folding>
                 <element signature="e#712#719#0" expanded="true" />
                 <element signature="e#787#794#0" expanded="true" />
-                <element signature="e#1486#1493#0" expanded="true" />
-                <element signature="e#1561#1568#0" expanded="true" />
-                <element signature="e#1700#1706#0" expanded="true" />
-                <element signature="e#1722#1729#0" expanded="true" />
+                <element signature="e#1958#1965#0" expanded="true" />
+                <element signature="e#2033#2040#0" expanded="true" />
+                <element signature="e#2172#2178#0" expanded="true" />
+                <element signature="e#2194#2201#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,18 +79,18 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/routes/rajpatel/src/index/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1533">
-              <caret line="164" column="18" lean-forward="false" selection-start-line="164" selection-start-column="18" selection-end-line="164" selection-end-column="18" />
+            <state relative-caret-position="829">
+              <caret line="143" column="16" lean-forward="false" selection-start-line="143" selection-start-column="16" selection-end-line="143" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/routes/rajpatel/src/index/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+            <state relative-caret-position="3200">
+              <caret line="100" column="16" lean-forward="false" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -154,8 +157,8 @@
         <option value="$PROJECT_DIR$/src/routes/rajpatel/rajpatel.js" />
         <option value="$PROJECT_DIR$/src/routes/root/src/index/index.css" />
         <option value="$PROJECT_DIR$/src/routes/root/src/index/index.js" />
-        <option value="$PROJECT_DIR$/src/routes/rajpatel/src/index/index.html" />
         <option value="$PROJECT_DIR$/src/routes/rajpatel/src/index/index.css" />
+        <option value="$PROJECT_DIR$/src/routes/rajpatel/src/index/index.html" />
         <option value="$PROJECT_DIR$/src/routes/rajpatel/src/index/index.js" />
       </list>
     </option>
@@ -332,12 +335,12 @@
       <workItem from="1514266727700" duration="892000" />
       <workItem from="1514437613301" duration="5145000" />
       <workItem from="1514856377229" duration="18783000" />
-      <workItem from="1514930913831" duration="7103000" />
+      <workItem from="1514930913831" duration="11787000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61026000" />
+    <option name="totallyTimeSpent" value="65710000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="42" width="3840" height="2118" extended-state="6" />
@@ -680,14 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/rajpatel/rajpatel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/root/src/index/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1056">
@@ -712,34 +707,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/rajpatel/src/index/index.html">
+    <entry file="file://$PROJECT_DIR$/src/routes/rajpatel/rajpatel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding>
-            <element signature="e#712#719#0" expanded="true" />
-            <element signature="e#787#794#0" expanded="true" />
-            <element signature="e#1486#1493#0" expanded="true" />
-            <element signature="e#1561#1568#0" expanded="true" />
-            <element signature="e#1700#1706#0" expanded="true" />
-            <element signature="e#1722#1729#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/rajpatel/src/index/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1533">
-          <caret line="164" column="18" lean-forward="false" selection-start-line="164" selection-start-column="18" selection-end-line="164" selection-end-column="18" />
+        <state relative-caret-position="224">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/rajpatel/src/index/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        <state relative-caret-position="3200">
+          <caret line="100" column="16" lean-forward="false" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/rajpatel/src/index/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="829">
+          <caret line="143" column="16" lean-forward="false" selection-start-line="143" selection-start-column="16" selection-end-line="143" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/rajpatel/src/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1024">
+          <caret line="32" column="6" lean-forward="true" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+          <folding>
+            <element signature="e#712#719#0" expanded="true" />
+            <element signature="e#787#794#0" expanded="true" />
+            <element signature="e#1958#1965#0" expanded="true" />
+            <element signature="e#2033#2040#0" expanded="true" />
+            <element signature="e#2172#2178#0" expanded="true" />
+            <element signature="e#2194#2201#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

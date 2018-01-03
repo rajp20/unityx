@@ -140,6 +140,10 @@ ul li a:hover + .hidden, .hidden:hover {
   min-height: 75vh;
 }
 
+.content-noshow {
+  display: none;
+}
+
 .footer {
   color: white;
   display: none;
