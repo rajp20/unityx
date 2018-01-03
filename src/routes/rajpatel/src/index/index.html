@@ -11,6 +11,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="index/index.js"></script>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111867144-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-111867144-1');
+  </script>
+
 </head>
 <body>
 <div class="title" id="title">
@@ -19,22 +29,24 @@
 </div>
 <div id="top-nav-bar" class="top-nav-bar">
   <ul id="menu">
-    <li><a id="navbar-home" class="active-nav-bar" href="#">HOME</a></li>
-    <li><a id="navbar-aboutme" href="#">ABOUT ME</a></li>
-    <li><a id="navbar-experience" href="#">EXPERIENCE</a></li>
-    <li><a id="navbar-education" href="#">EDUCATION</a></li>
-    <li><a id="navbar-skills" href="#">SKILLS</a></li>
-    <li><a id="navbar-resume" href="#">RESUME</a></li>
+    <li><a id="navbar-home" class="active-nav-bar">HOME</a></li>
+    <li><a id="navbar-experience">EXPERIENCE</a></li>
+    <li><a id="navbar-education">EDUCATION</a></li>
+    <li><a id="navbar-skills">SKILLS</a></li>
+    <li><a id="navbar-resume">RESUME</a></li>
   </ul>
   <label id="icon-label" class="show-menu"><i id="nav-bar-icon" class="fa fa-angle-down"></i></label>
 </div>
 
-<div id="home" class="content">
-  HOME
-</div>
+<div id="home" class="content content-noshow">
+  <div>
+    <div>
 
-<div id="aboutme" class="content content-noshow">
-  ABOUT ME
+    </div>
+  </div>
+  <div>
+    ABOUT ME
+  </div>
 </div>
 
 <div id="experience" class="content content-noshow">
@@ -46,7 +58,9 @@
 </div>
 
 <div id="skills" class="content content-noshow">
-  SKILLS
+  <div>
+    <p>SOFTWARE</p>
+  </div>
 </div>
 
 <div id="resume" class="content content-noshow">

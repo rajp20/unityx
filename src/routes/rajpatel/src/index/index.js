@@ -1,7 +1,7 @@
 window.onload = function () {
   var open = false;
   document.getElementById('icon-label').onclick = function () {
-    document.getElementById('nav-bar-icon').style.transitionDuration = "500ms";
+    document.getElementById('nav-bar-icon').style.transitionDuration = "1s";
     if (open) {
       document.getElementById('nav-bar-icon').style.transform = "rotate(0deg)";
     } else {
@@ -16,9 +16,9 @@ $(document).ready(function(){
 
   $("#icon-label").click(function(){
     if (opennav) {
-      $("ul").slideUp();
+      $("ul").slideUp(750);
     } else {
-      $("ul").slideDown();
+      $("ul").slideDown(750);
     }
     opennav = !opennav;
   });
@@ -28,7 +28,9 @@ $(document).ready(function(){
   });
 
   $('#title').fadeIn(2000);
-  $('#footer').delay(500).fadeIn(1000);
+
+  $('#home').delay(1000).fadeIn(1500);
+  $('#footer').delay(2000).fadeIn(1000);
 
   var prev_content = "home";
 
@@ -42,18 +44,6 @@ $(document).ready(function(){
     }
 
     prev_content = "home";
-  });
-
-  $('#navbar-aboutme').click(function () {
-    $('#navbar-' + prev_content).removeClass("active-nav-bar");
-    $(this).addClass("active-nav-bar");
-
-    if (prev_content != "aboutme") {
-      $('#' + prev_content).fadeOut(500);
-      $('#aboutme').delay(499).fadeIn(500);
-    }
-
-    prev_content = "aboutme";
   });
 
   $('#navbar-education').click(function () {
