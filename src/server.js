@@ -7,6 +7,7 @@ const subdomain   = require('express-subdomain');
 const rajpatelsub = require('src/routes/rajpatel/rajpatel');
 const jakemaschoff = require('src/routes/jakemaschoff/jakemaschoff');
 const melvinbosnjak = require('src/routes/melvinbosnjak/melvinbosnjak');
+const adamlee = require('src/routes/adamlee/adamlee');
 const home        = require('src/routes/root/root');
 
 'use strict';
@@ -93,6 +94,7 @@ if (env == "development") {
 app.use(subdomain('rajpatel', rajpatelsub));
 app.use(subdomain('jakemaschoff', jakemaschoff));
 app.use(subdomain('melvinbosnjak', melvinbosnjak));
+app.use(subdomain('adamlee', adamlee));
 app.use('/', home);
 app.use(bodyParser.json());
 
@@ -106,6 +108,7 @@ logger.info(`Sub-Domains`);
 logger.info(`rajpatel.${server_dns_name}`);
 logger.info(`jakemaschoff.${server_dns_name}`);
 logger.info(`melvinbosnjak.${server_dns_name}`);
+logger.info(`adamlee.${server_dns_name}`);
 logger.info(``);
 
 module.exports = app;
