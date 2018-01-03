@@ -24,9 +24,9 @@ $(document).ready(function(){
   });
 
   $("#top-nav-bar li").each(function(i) {
-    $(this).delay(100 * i).slideDown(500);
+    $(this).delay(100 * i).fadeIn(500);
   });
 
-  $('#title').slideDown(1000);
-  $('#footer').delay(1000).fadeIn(500);
+  $('#title').fadeIn(2000);
+  $('#footer').delay(500).fadeIn(1000);
 });
