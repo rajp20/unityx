@@ -199,6 +199,11 @@ ul li a:hover + .hidden, .hidden:hover {
   opacity: 0;
 }
 
+.resume-pdf {
+  width: 50vw;
+  height: 1000px;
+}
+
 /*Latex*/
 .latex sub, .latex sup {
   text-transform: uppercase;
