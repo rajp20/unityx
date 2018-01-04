@@ -38,6 +38,11 @@ $(document).ready(function(){
     $('#navbar-' + prev_content).removeClass("active-nav-bar");
     $(this).addClass("active-nav-bar");
 
+    if (opennav) {
+      $("ul").slideUp(750);
+      opennav = false;
+    }
+
     if (prev_content != "home") {
       $('#' + prev_content).fadeOut(500);
       $('#home').delay(499).fadeIn(500);
@@ -50,17 +55,49 @@ $(document).ready(function(){
     $('#navbar-' + prev_content).removeClass("active-nav-bar");
     $(this).addClass("active-nav-bar");
 
+    if (opennav) {
+      $("ul").slideUp(750);
+      opennav = false;
+    }
+
     if (prev_content != "education") {
       $('#' + prev_content).fadeOut(500);
-      $('#education').delay(499).fadeIn(500);
+      $('#boxelder-logo').delay(2500).fadeTo(1000, 1);
+      $('#education').delay(499).fadeIn(function () {
+        $("#education p").each(function(i) {
+          $(this).delay(100 * i).fadeTo(500, 1);
+        });
+      });
     }
 
     prev_content = "education";
   });
 
+  $('#navbar-projects').click(function () {
+    $('#navbar-' + prev_content).removeClass("active-nav-bar");
+    $(this).addClass("active-nav-bar");
+
+    if (opennav) {
+      $("ul").slideUp(750);
+      opennav = false;
+    }
+
+    if (prev_content != "projects") {
+      $('#' + prev_content).fadeOut(500);
+      $('#projects').delay(499).fadeIn(500);
+    }
+
+    prev_content = "projects";
+  });
+
   $('#navbar-experience').click(function () {
     $('#navbar-' + prev_content).removeClass("active-nav-bar");
     $(this).addClass("active-nav-bar");
+
+    if (opennav) {
+      $("ul").slideUp(750);
+      opennav = false;
+    }
 
     if (prev_content != "experience") {
       $('#' + prev_content).fadeOut(500);
@@ -74,6 +111,11 @@ $(document).ready(function(){
     $('#navbar-' + prev_content).removeClass("active-nav-bar");
     $(this).addClass("active-nav-bar");
 
+    if (opennav) {
+      $("ul").slideUp(750);
+      opennav = false;
+    }
+
     if (prev_content != "resume") {
       $('#' + prev_content).fadeOut(500);
       $('#resume').delay(499).fadeIn(500);
@@ -85,6 +127,11 @@ $(document).ready(function(){
   $('#navbar-skills').click(function () {
     $('#navbar-' + prev_content).removeClass("active-nav-bar");
     $(this).addClass("active-nav-bar");
+
+    if (opennav) {
+      $("ul").slideUp(750);
+      opennav = false;
+    }
 
     if (prev_content != "skills") {
       $('#' + prev_content).fadeOut(500);
