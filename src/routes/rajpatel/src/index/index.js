@@ -1,24 +1,13 @@
-window.onload = function () {
-  var open = false;
-  document.getElementById('icon-label').onclick = function () {
-    document.getElementById('nav-bar-icon').style.transitionDuration = "1s";
-    if (open) {
-      document.getElementById('nav-bar-icon').style.transform = "rotate(0deg)";
-    } else {
-      document.getElementById('nav-bar-icon').style.transform = "rotate(180deg)";
-    }
-    open = !open;
-  };
-};
-
 $(document).ready(function(){
   var opennav = false;
 
   $("#icon-label").click(function(){
     if (opennav) {
       $("ul").slideUp(750);
+      document.getElementById('nav-bar-icon').style.transform = "rotate(0deg)";
     } else {
       $("ul").slideDown(750);
+      document.getElementById('nav-bar-icon').style.transform = "rotate(180deg)";
     }
     opennav = !opennav;
   });
@@ -40,6 +29,7 @@ $(document).ready(function(){
 
     if (opennav) {
       $("ul").slideUp(750);
+      document.getElementById('nav-bar-icon').style.transform = "rotate(0deg)";
       opennav = false;
     }
 
@@ -57,6 +47,7 @@ $(document).ready(function(){
 
     if (opennav) {
       $("ul").slideUp(750);
+      document.getElementById('nav-bar-icon').style.transform = "rotate(0deg)";
       opennav = false;
     }
 
@@ -79,6 +70,7 @@ $(document).ready(function(){
 
     if (opennav) {
       $("ul").slideUp(750);
+      document.getElementById('nav-bar-icon').style.transform = "rotate(0deg)";
       opennav = false;
     }
 
@@ -96,6 +88,7 @@ $(document).ready(function(){
 
     if (opennav) {
       $("ul").slideUp(750);
+      document.getElementById('nav-bar-icon').style.transform = "rotate(0deg)";
       opennav = false;
     }
 
@@ -113,6 +106,7 @@ $(document).ready(function(){
 
     if (opennav) {
       $("ul").slideUp(750);
+      document.getElementById('nav-bar-icon').style.transform = "rotate(0deg)";
       opennav = false;
     }
 
@@ -130,6 +124,7 @@ $(document).ready(function(){
 
     if (opennav) {
       $("ul").slideUp(750);
+      document.getElementById('nav-bar-icon').style.transform = "rotate(0deg)";
       opennav = false;
     }
 
