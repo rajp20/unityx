@@ -1,14 +1,15 @@
 require('rootpath')();
-const logger      = require('logger/logger')('server.log');
-const express     = require('express');
-const config      = require('nconf');
-const bodyParser  = require('body-parser');
-const subdomain   = require('express-subdomain');
-const rajpatelsub = require('src/routes/rajpatel/rajpatel');
-const jakemaschoff = require('src/routes/jakemaschoff/jakemaschoff');
+const logger        = require('logger/logger')('server.log');
+const express       = require('express');
+const config        = require('nconf');
+const bodyParser    = require('body-parser');
+const subdomain     = require('express-subdomain');
+const rajpatelsub   = require('src/routes/rajpatel/rajpatel');
+const jakemaschoff  = require('src/routes/jakemaschoff/jakemaschoff');
 const melvinbosnjak = require('src/routes/melvinbosnjak/melvinbosnjak');
-const adamlee = require('src/routes/adamlee/adamlee');
-const home        = require('src/routes/root/root');
+const adamlee       = require('src/routes/adamlee/adamlee');
+const beacon       = require('src/routes/beacon/beacon');
+const home          = require('src/routes/root/root');
 
 'use strict';
 
@@ -95,6 +96,7 @@ app.use(subdomain('rajpatel', rajpatelsub));
 app.use(subdomain('jakemaschoff', jakemaschoff));
 app.use(subdomain('melvinbosnjak', melvinbosnjak));
 app.use(subdomain('adamlee', adamlee));
+app.use(subdomain('beacon', beacon));
 app.use('/', home);
 app.use(bodyParser.json());
 
@@ -109,6 +111,7 @@ logger.info(`rajpatel.${server_dns_name}`);
 logger.info(`jakemaschoff.${server_dns_name}`);
 logger.info(`melvinbosnjak.${server_dns_name}`);
 logger.info(`adamlee.${server_dns_name}`);
+logger.info(`beacon.${server_dns_name}`);
 logger.info(``);
 
 module.exports = app;

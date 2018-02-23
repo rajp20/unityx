@@ -289,7 +289,8 @@ ul li a:hover + .hidden, .hidden:hover {
 }
 
 .resume-pdf {
-  width: 90vw;
+  width: 950px;
+  max-width: 90vw;
   height: 120vh;
 }
 
