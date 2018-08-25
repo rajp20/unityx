@@ -1,7 +1,7 @@
 body {
     font-family: 'Lato', sans-serif;
     /*background-color: #2b3b3b;*/
-    background-image: url("/images/Winter_Mountains_edited.png");
+    /*background-image: url("/images/Winter_Mountains_edited.png");*/
     background-repeat:repeat-x;
     background-attachment:fixed;
     background-position: left top;
@@ -32,7 +32,7 @@ body::-webkit-scrollbar-thumb
 }
 
 .title {
-    color: white;
+    /*color: white;*/
     margin-top: .75vmax;
     display: none;
 }
@@ -43,7 +43,7 @@ body::-webkit-scrollbar-thumb
 
 .title a {
     text-decoration: none;
-    color: white;
+    /*color: white;*/
 }
 
 #title-name {
@@ -178,7 +178,7 @@ ul li a:hover + .hidden, .hidden:hover {
 .content {
     min-height: 70vh;
     margin: 1vmax;
-    color: white;
+    /*color: white;*/
     width: 90%;
 }
 
@@ -278,7 +278,7 @@ td, th {
 }
 
 .footer {
-    color: white;
+    /*color: white;*/
     display: none;
     text-align: center;
     margin: .75vmax;
@@ -294,5 +294,5 @@ td, th {
 
 .footer a {
     text-decoration: none;
-    color: white;
+    /*color: white;*/
 }
