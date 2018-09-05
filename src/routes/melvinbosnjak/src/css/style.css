@@ -1,5 +1,6 @@
+
 .main-body {
-	background-image: url(/images/Background.jpg);
+	background-image: url(../images/Background.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -27,14 +28,14 @@ img {
 }
 
 .about-me-body {
-	background-image: url(/images/Circuit.jpg);
+	background-image: url(../images/Circuit.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
 .projects-body {
-	background-image: url(/images/Circuit.jpg);
+	background-image: url(../images/Circuit.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
