@@ -28,9 +28,15 @@ production.ref = "origin/master"
 production.repo = "git@github.com:rajp20/unityx.git"
 production.path = "/home/rajpatel0820/unityx"
 production.ssh_options = "StrictHostKeyChecking=no"
-production["pre-setup"] = "sudo npm i -g pm2"
-production["pre-deploy-local"] = "echo 'Local command'"
+production["pre-setup"] = "sudo npm i -g pm2 &&" +
+    "curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - &&" +
+    "sudo apt-get install -y nodejs &&" +
+    "sudo apt-get install -y build-essential &&" +
+    "sudo apt-get install libcap2-bin &&" +
+    "sudo setcap cap_net_bind_service=+ep `readlink -f \`which node\``"
 production["post-deploy"] = "npm i && pm2 startOrRestart config/ecosystem.config.js --env production"
+production.env = {}
+production.env.NODE_ENV = "production"
 ecosystem.deploy.production = production
 
 module.exports = ecosystem
