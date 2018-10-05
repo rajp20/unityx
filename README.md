@@ -32,7 +32,7 @@ sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 443 -j REDIRECT --to-p
 
 ### To start
 ```
-pm2 start config/echosystem.config.js
+pm2 start config/ecosystem.config.js
 ```
 Once the app is running, visit `localhost:8000`.
 
@@ -44,12 +44,12 @@ sudo npm i -g pm2
 
 ### To stop
 ```
-pm2 stop config/echosystem.config.js
+pm2 stop config/ecosystem.config.js
 ```
 
 ### To start in production
 ```
-pm2 start config/echosystem.config.js --env production
+pm2 start config/ecosystem.config.js --env production
 ```
 
 
