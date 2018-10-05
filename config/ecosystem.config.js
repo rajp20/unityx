@@ -32,7 +32,7 @@ production["pre-setup"] =  "curl -sL https://deb.nodesource.com/setup_10.x | sud
     "sudo apt-get install -y nodejs &&" +
     "sudo apt-get install -y build-essential &&" +
     "sudo npm i -g pm2 &&" +
-    "sudo iptables -t nat -A PREROUTING -i ens4 -p tcp --dport 80 -j REDIRECT --to-port 8080" +
+    "sudo iptables -t nat -A PREROUTING -i ens4 -p tcp --dport 80 -j REDIRECT --to-port 8080 &&" +
     "sudo iptables -t nat -A PREROUTING -i ens4 -p tcp --dport 443 -j REDIRECT --to-port 10443"
 production["post-deploy"] = "npm i && pm2 startOrRestart config/ecosystem.config.js --env production"
 production.env = {}
