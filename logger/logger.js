@@ -1,18 +1,12 @@
 require('rootpath')();
-const winston = require('winston'),
-      fs      = require('fs'),
-      config  = require('nconf');
+const winston = require('winston')
+const fs = require('fs')
 
 const env = process.env.NODE_ENV;
+const config = require(`config/${env}.config.js`)
 
 module.exports = function (filename) {
-  config.argv()
-    .env()
-    .file({
-      file: `config/${env}.config.json`
-    });
-
-  let log_level = config.get('log_level');
+  let log_level = config.log_level;
 
 // check if directory exist
   if (!fs.existsSync(`logs`)) {

@@ -14,17 +14,42 @@ npm i
 
 ## Configuration <a name="config"></a>
 Add the following to `/etc/hosts` for sub-domains:
-```javascript 1.8
-127.0.0.1 localhost.dev
-127.0.0.1 rajpatel.localhost.dev
-127.0.0.1 jakemaschoff.localhost.dev
-127.0.0.1 othersubdomain.localhost.dev
+```
+127.0.0.1 example.com
+127.0.0.1 rajpatel.example.com
+127.0.0.1 jakemaschoff.example.com
+127.0.0.1 othersubdomain.example.com
 ```
 
-## Running the App <a name="running"></a>
-Dev:
-```javascript 1.8
-npm run dev
+Forwarding port 80 to 8080 and port 443 to 10443.
+(Add this commands to `/etc/rc.local`)
+```
+sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
+sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 443 -j REDIRECT --to-port 10443
+```
+
+## Operating the App <a name="running"></a>
+
+### To start
+```
+pm2 start config/echosystem.config.js
+```
+Once the app is running, visit `localhost:8000`.
+
+Note: If you run into issues regarding "pm2" not being installed, run this command before running the above command.
+
+```
+sudo npm i -g pm2
+```
+
+### To stop
+```
+pm2 stop config/echosystem.config.js
+```
+
+### To start in production
+```
+pm2 start config/echosystem.config.js --env production
 ```
 
 
