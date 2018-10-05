@@ -28,7 +28,9 @@ production.ref = "origin/master"
 production.repo = "git@github.com:rajp20/unityx.git"
 production.path = "/home/rajpatel0820/unityx"
 production.ssh_options = "StrictHostKeyChecking=no"
-production["pre-setup"] = "sudo npm i -g pm2"
+production["pre-setup"] = "sudo npm i -g pm2" +
+    "&& sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080" +
+    "&& sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 443 -j REDIRECT --to-port 10443"
 production["pre-deploy-local"] = "echo 'Local command'"
 production["post-deploy"] = "npm i && pm2 startOrRestart config/ecosystem.config.js --env production"
 production.env = {}
