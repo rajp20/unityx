@@ -33,7 +33,7 @@ production["pre-setup"] = "sudo npm i -g pm2 &&" +
     "sudo apt-get install -y nodejs &&" +
     "sudo apt-get install -y build-essential &&" +
     "sudo apt-get install libcap2-bin &&" +
-    "sudo setcap cap_net_bind_service=+ep `readlink -f \`which node\``"
+    "sudo setcap cap_net_bind_service=+ep `readlink -f which\ node`"
 production["post-deploy"] = "npm i && pm2 startOrRestart config/ecosystem.config.js --env production"
 production.env = {}
 production.env.NODE_ENV = "production"
