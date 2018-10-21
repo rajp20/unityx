@@ -24,9 +24,17 @@ ul.navbar > :first-child {
 }
 
 .navbar a {
-    display: block;
+    /*display: block;*/
     padding: 8px;
     font-size: 24px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
 }
 
 li a i {
@@ -73,13 +81,24 @@ a.nav-header:hover {
 }
 
 .footer {
+    position: fixed;
     bottom: 0;
-    position: absolute;
-    margin: 15px;
+}
+
+.footer a {
+    display: block;
+}
+
+.footer li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .title {
     position: relative;
     font-size: 45px;
     color: #ffffff;
+    left: 50%;
 }
