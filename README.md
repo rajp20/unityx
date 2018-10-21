@@ -2,17 +2,18 @@
 This website is mainly for developing and learning various technical aspects. 
 
 #### Table of Contents
-- [Installation](#Installation)
+- [Installation](#installation)
 - [Configuration](#config)
-- [Running the App](#running)
+- [Operating the App](#running)
 
-## Installation <a name="Installation"></a>
+## Installation <a name="installation"></a>
 Run the following command to install node packages.
 ```
 npm i
 ```
 
 ## Configuration <a name="config"></a>
+### Local
 Add the following to `/etc/hosts` for sub-domains:
 ```
 127.0.0.1 example.com
@@ -20,7 +21,7 @@ Add the following to `/etc/hosts` for sub-domains:
 127.0.0.1 jakemaschoff.example.com
 127.0.0.1 othersubdomain.example.com
 ```
-
+### Production
 Forwarding port 80 to 8080 and port 443 to 10443.
 (Add this commands to `/etc/rc.local`)
 ```
@@ -30,7 +31,8 @@ sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 443 -j REDIRECT --to-p
 
 ## Operating the App <a name="running"></a>
 
-### To start
+### Local
+#### To Start
 ```
 pm2 start config/ecosystem.config.js
 ```
@@ -42,14 +44,19 @@ Note: If you run into issues regarding "pm2" not being installed, run this comma
 sudo npm i -g pm2
 ```
 
-### To stop
+#### To stop
 ```
 pm2 stop config/ecosystem.config.js
 ```
 
-### To start in production
+### Production
+#### To start in production
 ```
 pm2 start config/ecosystem.config.js --env production
+```
+#### Deploying the App
+```
+pm2 depoloy
 ```
 
 
