@@ -55,8 +55,18 @@ pm2 stop config/ecosystem.config.js
 pm2 start config/ecosystem.config.js --env production
 ```
 #### Deploying the App
+You'll need to add an SSH key to the server before you can run any of the following commands.
+##### Set up
 ```
-pm2 depoloy
+pm2 depoloy config/ecosystem.config.js production setup
+```
+##### Starting
+```
+pm2 depoloy config/ecosystem.config.js production
+```
+##### Update
+```
+pm2 depoloy config/ecosystem.config.js production update
 ```
 
 
