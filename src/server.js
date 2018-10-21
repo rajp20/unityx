@@ -17,6 +17,7 @@ const home = require('src/routes/root/index')
 
 'use strict'
 
+// CONFIG
 const env = process.env.NODE_ENV
 const config = require(`config/${env}.config.js`)
 
@@ -32,6 +33,7 @@ process.on('uncaughtException', function (err) {
     process.exit(1)
 })
 
+// SSL STUFF
 // returns an instance of node-greenlock with additional helper methods
 let glx = require('greenlock-express').create({
     server: config.ssl_server,
@@ -89,7 +91,10 @@ if (env === "development") {
     })
 }
 
-// Subdomains routing
+// VIEW ENGINE
+app.set('view engine', 'pug')
+
+// SUB-DOMAINS
 app.use(sub_domain('rajpatel', raj_patel))
 app.use(sub_domain('jakemaschoff', jake_maschoff))
 app.use(sub_domain('melvinbosnjak', melvin_bosnjak))
