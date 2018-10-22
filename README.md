@@ -22,7 +22,7 @@ Add the following to `/etc/hosts` for sub-domains:
 ```
 
 Forwarding port 80 to 8080 and port 443 to 10443.
-(Add this commands to `/etc/rc.local`)
+(Add these commands to `/etc/rc.local`, also change `eth0` to your network interface)
 ```
 sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
 sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 443 -j REDIRECT --to-port 10443
