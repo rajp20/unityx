@@ -1,7 +1,26 @@
-.experience {
+.logo {
+    width: 12vw;
+    margin: 0 15px;
+}
 
+.experience {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin: 0 50px;
 }
 
 .experience-content {
-    
+    display: flex;
+    flex-direction: column;
+}
+
+.job-title {
+    margin: 0;
+}
+
+.job-description {
+    flex-wrap: wrap;
+    width: 30vw;
 }
