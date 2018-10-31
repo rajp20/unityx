@@ -1,0 +1,29 @@
+.resume-wrapper iframe{
+    width: 650px;
+    max-width: 90vw;
+    height: 82vh;
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    /*margin-top: -5vh;*/
+}
+
+#download-button {
+    border: 3px solid black;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px;
+    margin: 15px 0;
+    transition: all .2s ease-in-out;
+}
+
+#download-button:hover {
+    border: 3px solid #82ffad;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px;
+    margin: 15px 0;
+    color: #82ffad;
+    transform: scale(1.1);
+}

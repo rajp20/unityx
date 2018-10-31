@@ -1,0 +1,24 @@
+.course-bckgnd {
+    width: 100vw;
+    max-width: 100%;
+    height: 40vh;
+    background-image: url('/images/course-bckgnd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    border-top: 4px solid #82ffad;
+    border-bottom: 4px solid #82ffad;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.space-col {
+    margin: 0 100px;
+}
+
+.course {
+    font-size: 32px;
+    margin: 5px 20px;
+    font-weight: 200;
+}

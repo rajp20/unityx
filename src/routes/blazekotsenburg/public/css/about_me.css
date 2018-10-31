@@ -1,0 +1,43 @@
+.about-me-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    height: 100%;
+}
+
+#profile-pic {
+    width: 15vw;
+    max-width: 15vw;
+    border: 4px solid #82ffad;
+    border-radius: 50%;
+    margin: 0 100px;
+}
+
+.about-me-bckgnd {
+    width: 100vw;
+    max-width: 100%;
+    height: 40vh;
+    background-image: url('/images/geometry.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top: 4px solid #82ffad;
+    border-bottom: 4px solid #82ffad;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-me-content {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 50px;
+}
+
+#about-me-header {
+    margin: 0;
+}
