@@ -58,15 +58,15 @@ pm2 start config/ecosystem.config.js --env production
 You'll need to add an SSH key to the server before you can run any of the following commands.
 ##### Set up
 ```
-pm2 depoloy config/ecosystem.config.js production setup
+pm2 deploy config/ecosystem.config.js production setup
 ```
 ##### Starting
 ```
-pm2 depoloy config/ecosystem.config.js production
+pm2 deploy config/ecosystem.config.js production
 ```
 ##### Update
 ```
-pm2 depoloy config/ecosystem.config.js production update
+pm2 deploy config/ecosystem.config.js production update
 ```
 
 
