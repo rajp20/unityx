@@ -1,8 +1,10 @@
 .resume-wrapper iframe{
-    width: 750px;
+    width: 650px;
     max-width: 90vw;
-    height: 91vh;
+    height: 82vh;
     border-radius: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    /*margin-top: -5vh;*/
 }
 
 #download-button {
