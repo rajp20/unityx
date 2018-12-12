@@ -1,7 +1,5 @@
 body {
     font-family: 'Lato', sans-serif;
-    /*background-color: #2b3b3b;*/
-    /*background-image: url("/images/Winter_Mountains_edited.png");*/
     background-repeat:repeat-x;
     background-attachment:fixed;
     background-position: left top;
@@ -28,12 +26,13 @@ body::-webkit-scrollbar-thumb
 {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #318181;
+    background-color: #4affb5;
 }
 
 .title {
     /*color: white;*/
     margin-top: .75vmax;
+    text-align: center;
     display: none;
 }
 
@@ -65,7 +64,7 @@ body::-webkit-scrollbar-thumb
 }
 
 /*Strip the ul of padding and list styling*/
-ul {
+.top-nav-bar ul {
     list-style-type:none;
     margin: 1vmax;
     padding:0;
@@ -87,7 +86,7 @@ ul {
 }
 
 /*Create a horizontal list with spacing*/
-li {
+.top-nav-bar li {
     display:inline-block;
     float: left;
     margin: 2px;
@@ -188,6 +187,7 @@ ul li a:hover + .hidden, .hidden:hover {
 
 .center-text {
     text-align: center;
+    padding-bottom: 25px;
 }
 
 .home-container {
@@ -209,15 +209,6 @@ ul li a:hover + .hidden, .hidden:hover {
     text-align: justify;
     font-size: 18px;
     margin: 10px;
-}
-
-.current-state-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
 }
 
 .current-state-text-container {
@@ -246,17 +237,24 @@ td, th {
     background-color: rgba(221, 221, 221, 0.2);
 }
 
+.flex-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .sub-title {
     font-weight: bold;
     font-size: 22px;
-    border-bottom: 2px solid white;
-    margin: 0;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin: 0px;
 }
 
 .sub-title-1 {
     font-weight: bold;
     font-size: 22px;
-    margin: 0;
+    margin-bottom: 5px;
 }
 
 #team-names {
@@ -264,6 +262,7 @@ td, th {
 }
 
 .team-names-container {
+    text-align: center;
     width: 420px;
     max-width: 100%;
 }

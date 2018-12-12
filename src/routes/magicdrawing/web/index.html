@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>LED Canvas</title>
+    <link rel="icon" type="image/jpg" href="images/icon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -13,7 +14,7 @@
 
 </head>
 <body>
-<div class="title center-text" id="title">
+<div class="title" id="title">
     <p id="title-name">Magic Drawing</p>
 </div>
 <div id="top-nav-bar" class="top-nav-bar">
@@ -26,40 +27,153 @@
 
 <div id="home" class="content content-noshow">
     <div class="home-container">
-        <div class="center-text team-names-container">
+        <div class="team-names-container">
             <p class="sub-title">TEAM</p>
             <p id="team-names">Raj Patel &mdash; Blaze Kotsenburg &mdash; Jake Maschoff</p>
         </div>
         <div class="center-text abstract-text-container">
             <p class="sub-title-1">PROJECT BACKGROUND</p>
             <p class="justify-text">
-                When collaborating on ideas for our senior project, we came up with a handful of ideas that were based
-                off of existing projects. Even though we would be building from these ideas and developing our project
-                from scratch, it didn’t feel original. We wanted our project to feel unique compared to the other
-                projects we had already seen. This is what drove us to develop a project from a more artistic and
-                creative viewpoint.
-                <br><br>
-                We want to make a unique user experience where they can interact with our piece of art in a multitude of
-                ways. Our project will be a 2m x 1m (6ft x 3ft) canvas with an array of rgb LED strips attached to the
-                back of the canvas. To the user, they will initially see a blank white canvas on the wall. The user will
-                interact with the canvas via an app on a tablet using touch events and gestures. Each touch event the
-                user provides to the tablet will be translated to the canvas, illuminating the LEDs behind the canvas at
-                the corresponding point. A small servo behind the canvas will also apply pressure to the canvas, pushing
-                the canvas outwards making it appear like the users finger is applying pressure to the canvas.
+                We discovered the Coca Cola display in Time Square
+                while searching for projects. It is a visual
+                display that combines mechanical and computer engineering. The display itself is used
+                for marketing purposes but shows that the
+                combination engineering and art can be used
+                to make very expressive designs. As seen in
+                Fig. 1, the Coca Cola display creates a 3D
+                effect using LED blocks (similar to a 64x64
+                LED block) with actuators attached behind
+                them. The actuators move the blocks in and
+                out of the display at different sequences to
+                showcase a visual art show.
+            </p>
+            <figure>
+                <img style="height: 350px; margin: 5px;" src="images/CocaCola.png" alt="cocacola">
+                <figcaption>Coca Cola Time Square Display creating a 3D effect via actuators and LEDs.
+                </figcaption>
+            </figure>
+            <p class="justify-text">
+                Originally, we wanted to create a 3D display
+                similar to Fig. 1. However, in order to make
+                our project significant, this would have re-
+                quired a large amount of 64x64 LED blocks
+                and actuators, which are both rather expensive and out of our budget. As a result, we
+                started to think about a cheaper alternative
+                for a 3D display. Instead of LED blocks with
+                actuators behind each block, we decided to
+                use LED strips, linear tracks, and motors to
+                move a single actuator through a 2D space.
+                The actuator then applies pressure to the back
+                of the canvas, giving the Canvas a 3D effect.
+                Our linear tracks are inspired by CNC and
+                3D printers because they move very smoothly
+                with high precision which is what we wanted.
             </p>
         </div>
-        <div class="center-text current-state-container">
+        <div class="center-text">
             <div class="current-state-text-container">
-                <p class="sub-title-1">CURRENT PROJECT STATUS</p>
-                <p class="justify-text">
-                    We currently are ordering parts for the project. We're also designing the frame/housing of our LED
-                    canvas. We're really just in the planning phase and hope to complete that within a week or two.
-                </p>
+                <p class="sub-title-1">DESIGN</p>
+                <div class="flex-row-container">
+                    <img style="height: 300px; margin: 5px;" src="images/design.jpg">
+                    <ul class="justify-text">
+                        <li>We wanted our display to be meaningful so we decided to build a 1m x 2m canvas.</li>
+                        <li>2 x Stepper motors for movement in X and Y plane</li>
+                        <li>Aluminum V-Slot linear tracks</li>
+                        <li>Actuator for 3D effect in Z direction</li>
+                        <li>18 Neopixel LED strips (60 LED/1 m)</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="center-text current-state-container">
-            <img style="height: 350px; margin: 25px;" src="images/design.jpg">
-            <img style="height: 350px; margin: 25px;" src="https://cdn-shop.adafruit.com/1200x900/1376-00.jpg">
+        <div class="center-text">
+            <div class="current-state-text-container">
+                <p class="sub-title-1">LEDs</p>
+                <img style="height: 300px; margin: 5px; padding-bottom: 15px;" src="images/leds1.png">
+                <div class="flex-row-container">
+                    <img style="height: 300px; margin: 5px;" src="images/leds2.jpg">
+                    <ul class="justify-text">
+                        <li>60 x 18 resolution</li>
+                        <li>Each stip requires 4A to run all LEDs at full brightness</li>
+                        <li>Each LED is individually indexable</li>
+                        <li>Full RGB spectrum</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="center-text">
+            <div class="current-state-text-container">
+                <p class="sub-title-1">LINEAR TRACKS & FRAME</p>
+                <p class="justify-text">Originally, our plan was to hang our project on a wall. However,
+                    as we progressed, the project became heavier than expected.
+                    Thus, we decided to make a frame with legs to house all of our
+                    components.</p>
+                <div class="flex-row-container">
+                    <img style="height: 300px; margin: 5px; padding-bottom: 15px;" src="images/frame_legs.png">
+                    <img style="height: 300px; margin: 5px; padding-bottom: 15px;" src="images/frame_updated.jpg">
+                </div>
+                <img style="height: 300px; margin: 5px; padding-bottom: 5px;" src="images/frame.png">
+                <p class="justify-text">Assembled extrusions, stepper motors, timing belts, pulleys, and gantry cart to
+                    create a 2D plane movement.</p>
+            </div>
+        </div>
+        <div class="center-text">
+            <div class="current-state-text-container">
+                <p class="sub-title-1">iOS APP</p>
+                <div class="flex-row-container">
+                    <figure>
+                        <img style="height: 300px; margin: 5px;" src="images/ios1.png">
+                        <figcaption>Version 1 of the iOS app.</figcaption>
+                    </figure>
+                    <figure>
+                        <img style="height: 300px; margin: 5px;" src="images/ios2.jpg">
+                        <figcaption>Final version of the iOS app.</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <ul class="justify-text">
+                <li>Provides communication to microcontroller via CoreBluetooth framework</li>
+                <li>Provides user interface for interacting with Magic Drawing Canvas</li>
+                <li>CoreGraphics framework allows user to visualize what they are drawing in the app</li>
+                <li>Sends data to microcontroller via CSV format</li>
+            </ul>
+        </div>
+        <div class="center-text">
+            <div class="current-state-text-container">
+                <p class="sub-title-1">MICROCONTROLLER</p>
+                <div class="flex-row-container">
+                    <img style="height: 350px; margin: 5px;" src="images/microcontroller.jpg">
+                    <ul class="justify-text">
+                        <li>Arduino Mega for controlling the LEDs, motors, and actuator</li>
+                        <li>Provides user interface for interacting with Magic Drawing Canvas</li>
+                        <li>AMIS-30543 Stepper Motor Drivers</li>
+                        <li>Custom PCB for LED data lines & actuator driver</li>
+                    </ul>
+                </div>
+                <figure>
+                    <img style="height: 500px; margin: 5px;" src="images/state_diagram.png">
+                    <figcaption>Flow chart of interaction between iOS app and the microcontroller.</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="center-text">
+            <div class="current-state-text-container">
+                <p class="sub-title-1">POWER</p>
+                <div class="flex-row-container">
+                    <img style="height: 350px; margin: 5px;" src="images/wiring.jpg">
+                    <ul class="justify-text">
+                        <li>5V/60A LED power supply</li>
+                        <li>12V/14.6A Motor power supply</li>
+                        <li>12V/6A Actuator power supply</li>
+                        <li>6 x 600V/25A Dual row 8 position bus bar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="center-text">
+            <div class="current-state-text-container">
+                <p class="sub-title-1">FINAL PRODUCT</p>
+                <img style="height: 350px; margin: 5px;" src="images/final_product.jpg">
+            </div>
         </div>
         <div class="center-text table-container">
             <div>
@@ -67,19 +181,23 @@
                 <table class="parts-table">
                     <tr>
                         <td>LED Pixels</td>
-                        <td><a href="https://www.adafruit.com/product/1376?length=2">18 x Adafruit NeoPixel Digital RGB LED Strip - White 30 LED</a></td>
+                        <td><a href="https://www.adafruit.com/product/1376?length=2">18 x Adafruit NeoPixel Digital RGB
+                            LED Strip - White 30 LED</a></td>
                     </tr>
                     <tr>
                         <td>Bluetooth</td>
-                        <td><a href="https://www.adafruit.com/product/2479">1 x Adafruit Bluefruit LE UART Friend - Bluetooth Low Energy (BLE)</a></td>
+                        <td><a href="https://www.adafruit.com/product/2479">1 x Adafruit Bluefruit LE UART Friend -
+                            Bluetooth Low Energy (BLE)</a></td>
                     </tr>
                     <tr>
                         <td>Arduino</td>
-                        <td><a href="https://store.arduino.cc/usa/arduino-mega-2560-rev3">1 x ARDUINO MEGA 2560 REV3</a></td>
+                        <td><a href="https://store.arduino.cc/usa/arduino-mega-2560-rev3">1 x ARDUINO MEGA 2560 REV3</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Stepper Motors</td>
-                        <td><a href="https://openbuildspartstore.com/nema-23-stepper-motor-high-torque-series/">2 × NEMA 23 Stepper Motor - High Torque Series</a></td>
+                        <td><a href="https://openbuildspartstore.com/nema-23-stepper-motor-high-torque-series/">2 × NEMA
+                            23 Stepper Motor - High Torque Series</a></td>
                     </tr>
                     <tr>
                         <td>Motor Drivers</td>
@@ -88,25 +206,36 @@
                     <tr>
                         <td>Linear Tracks (Gantry carts, timing belts, wheels, etc.)</td>
                         <td>
-                            <a href="https://openbuildspartstore.com/v-slot-20x80-linear-rail/">1 x V-Slot 20x80 Linear Rail</a> <br>
-                            <a href="https://openbuildspartstore.com/v-slot-20x60-linear-rail/">4 x V-Slot 20x60 Linear Rail</a> <br>
-                            <a href="https://openbuildspartstore.com/v-slot-20x40-linear-rail/">3 x V-Slot 20x40 Linear Rail</a> <br>
-                            <a href="https://openbuildspartstore.com/v-slot-gantry-set-universal/">3 x V-Slot Gantry Set</a> <br>
-                            <a href="https://openbuildspartstore.com/3gt-gt2-3m-timing-belt-by-the-foot/">22ft 3GT (GT2-3M) Timing Belt</a> <br>
-                            <a href="https://openbuildspartstore.com/3gt-timing-pulley-20-tooth/">2 x 3GT (GT2-3M) Timing Pulley - 20 Tooth</a> <br>
-                            <a href="https://openbuildspartstore.com/micro-limit-switch-kit/">2 x Micro Limit Switch Kit</a> <br>
+                            <a href="https://openbuildspartstore.com/v-slot-20x80-linear-rail/">1 x V-Slot 20x80 Linear
+                                Rail</a> <br>
+                            <a href="https://openbuildspartstore.com/v-slot-20x60-linear-rail/">4 x V-Slot 20x60 Linear
+                                Rail</a> <br>
+                            <a href="https://openbuildspartstore.com/v-slot-20x40-linear-rail/">3 x V-Slot 20x40 Linear
+                                Rail</a> <br>
+                            <a href="https://openbuildspartstore.com/v-slot-gantry-set-universal/">3 x V-Slot Gantry
+                                Set</a> <br>
+                            <a href="https://openbuildspartstore.com/3gt-gt2-3m-timing-belt-by-the-foot/">22ft 3GT
+                                (GT2-3M) Timing Belt</a> <br>
+                            <a href="https://openbuildspartstore.com/3gt-timing-pulley-20-tooth/">2 x 3GT (GT2-3M)
+                                Timing Pulley - 20 Tooth</a> <br>
+                            <a href="https://openbuildspartstore.com/micro-limit-switch-kit/">2 x Micro Limit Switch
+                                Kit</a> <br>
                         </td>
                     </tr>
                     <tr>
                         <td>Linear Actuator</td>
-                        <td>Still under consideration</td>
+                        <td><a href="https://www.progressiveautomations.com/mini-linear-actuator">Mini Linear Actuator
+                        </a> <br></td>
                     </tr>
                     <tr>
                         <td>Power Supplies</td>
                         <td>
-                            <a href="https://openbuildspartstore.com/24v-14-6a-meanwell-power-supply/">1 x 24V/14.6A Meanwell Power Supply</a> <br>
-                            <a href="https://www.amazon.com/Tanbaby-Universal-Regulated-Switching-Computer/dp/B017YEOAPA">1 x Tanbaby 5V 60A DC Universal Regulated Switching Power Supply 300w</a> <br>
-                            <a href="https://www.amazon.com/gp/product/B06XKFCTSM/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1">6 x Eowpower 600V 25A Dual Row 8 Position Bus Bar</a> <br>
+                            <a href="https://openbuildspartstore.com/24v-14-6a-meanwell-power-supply/">1 x 24V/14.6A
+                                Meanwell Power Supply</a> <br>
+                            <a href="https://www.amazon.com/Tanbaby-Universal-Regulated-Switching-Computer/dp/B017YEOAPA">1
+                                x Tanbaby 5V 60A DC Universal Regulated Switching Power Supply 300w</a> <br>
+                            <a href="https://www.amazon.com/gp/product/B06XKFCTSM/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1">6
+                                x Eowpower 600V 25A Dual Row 8 Position Bus Bar</a> <br>
                         </td>
                     </tr>
                     <tr>
