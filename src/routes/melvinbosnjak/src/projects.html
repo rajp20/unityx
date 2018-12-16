@@ -10,7 +10,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	
+
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -60,7 +60,7 @@
 				$("#main-text").css("font-size", "75px");
 			}
 		});
-		
+
 	</script>
 </head>
 <body class="projects-body">
@@ -113,18 +113,22 @@
 				  <img class="card-img-top" src="images/Spreadsheet.jpg" alt="Card image cap">
 				  <div class="card-body">
 				    <h4 class="card-title">Spreadsheet</h4>
-				    <p class="card-text">This application is a graphical user interface that implements the functionality of a spreadsheet such as Excel. It allows users to store strings, numbers, or formulas into each cell. The use of formulas are demonstrated in the image above where the value of the B1 cell is dependent on the values of the A1 and A2. All of the libraries and the GUI were programmed in C# using Visual Studio.</p>
+				    <p class="card-text">This application implements the functionality of a spreadsheet similar to Excel. It allows users to store
+							strings, numbers, or formulas into each cell. The use of formulas are demonstrated in the image above where the value of the
+							B1 cell is dependent on the values of the A1 and A2. The spreadsheet also allows multiple users to connect to a spreadsheet at one time
+							so that when one client makes a change to the spreadsheet server, then the change is propogated to all other clients connected to that
+							server. All of the libraries and the GUI were developed in C# using Visual Studio.</p>
 				  </div>
 				</div>
 
 				<div class="card mb-3">
-				  <img class="card-img-top" src="images/Nexys3.png" alt="Card image cap">
+				  <img class="card-img-top" src="images/TankGame.jpg" alt="Card image cap">
 				  <div class="card-body">
-				    <h4 class="card-title"> Universal Asynchronous Receiver/Transmitter</h4>
-				    <p class="card-text">This circuit can communicate with a standard computer terminal. It is able to accept serial
-					ASCII data from a terminal keyboard (when you press a key on the terminal, serial ASCII data is sent out
-					the serial connection) and collect it into a parallel byte of information. This byte of data will then be
-					sent back to the terminal as serial data so that it is echoed on the terminal screen. Written in Verilog using finite state machines, and embedded to a Nexys3 board using Adept.</p>
+				    <h4 class="card-title">FPGA Tank Game</h4>
+				    <p class="card-text">Worked on a team of 4 to design a single core CPU with a suite of custom instructions inspired by the RISC architechture. Using our
+						custom assembly language, we wrote a top down tank shooter game that supports multiple tank and projectile sprites and used SNES controllers to control
+						the tanks. Additional finite state machines handled the SNES input and the VGA display for the game. The project was written in Verilog and embedded onto
+						the Terasic DE1-SoC FPGA board.</p>
 				  </div>
 				</div>
 
@@ -145,7 +149,7 @@
 
 				<div style="font-color: rgb(40, 40, 40);" class="footer">
 					<p>208-891-0445 | <a href="mailto: meco0597@gmail.com">meco0597@gmail.com</a> | <a href="https://www.linkedin.com/in/melvin-bosnjak/"><i class="footer-button fa fa-linkedin-square"></i></a></p>
-					<p>Copyright &copy; 2018 Melvin Bosnjak</p>
+					<p>2019 Melvin Bosnjak</p>
 				</div>
 		</div>
 
