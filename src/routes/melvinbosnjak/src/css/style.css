@@ -60,10 +60,34 @@ img {
 	color: white;
 }
 
+.hover-inv:active {
+	color: black;
+}
+
 .overlay {
 	background-color: rgba(0, 0, 0, 0.65);
 	height: 100%;
 	width: 100%;
+}
+
+/* canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+		margin-top: 20px;
+    display: block;
+} */
+
+#start-game-button {
+	margin-top: 30px;
+	width: 100px;
+	border: 2px solid black;
+	padding: 10px;
+}
+
+#game {
+	background-image: url(../images/game_background.jpg);
 }
 
 .navbar-dark {
@@ -92,6 +116,11 @@ img {
 .hover:hover {
 	color: black;
 	background-color: white;
+}
+
+.hover-inv:hover {
+	color: white;
+	background-color: black;
 }
 
 .front-and-center {
