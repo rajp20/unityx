@@ -15,6 +15,7 @@ const shiv_patel = require('src/routes/shivpatel/index')
 const brandon_ward = require('src/routes/brandonward/index')
 const magicdrawing = require('src/routes/magicdrawing/index')
 const home = require('src/routes/root/index')
+const cavelaa = require('src/routes/cavelaa/index')
 
 'use strict'
 
@@ -105,6 +106,7 @@ app.use(sub_domain('blazekotsenburg', blaze_kotsenburg))
 app.use(sub_domain('shivpatel', shiv_patel))
 app.use(sub_domain('brandonward', brandon_ward))
 app.use(sub_domain('magicdrawing', magicdrawing))
+app.use(sub_domain('cavelaa', cavelaa))
 app.use('/', home)
 app.use(bodyParser.json())
 
