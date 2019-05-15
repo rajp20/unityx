@@ -82,16 +82,15 @@ let app = express()
 if (env === "development") {
     app.listen(config.port)
 } else {
-    app.listen(config.port)
     // handles acme-challenge and redirects to https
-    // require('http').createServer(glx.middleware(require('redirect-https')())).listen(config.port, function () {
-    //     logger.debug("Listening for ACME http-01 challenges on", this.address())
-    // })
-    //
-    // // handles your app
-    // require('https').createServer(glx.httpsOptions, app).listen(config.ssl_port, function () {
-    //     logger.debug("Listening for ACME tls-sni-01 challenges and serve app on", this.address())
-    // })
+    require('http').createServer(glx.middleware(require('redirect-https')())).listen(config.port, function () {
+        logger.debug("Listening for ACME http-01 challenges on", this.address())
+    })
+
+    // handles your app
+    require('https').createServer(glx.httpsOptions, app).listen(config.ssl_port, function () {
+        logger.debug("Listening for ACME tls-sni-01 challenges and serve app on", this.address())
+    })
 }
 
 // VIEW ENGINE
