@@ -9,11 +9,7 @@ router.use(express.static(__dirname + '/public'))
 
 //api specific routes
 router.get('/', function (req, res) {
-    res.sendFile(__dirname + '/web/index/index.html')
-});
-
-router.get('/new', function (req, res) {
-    res.render(__dirname + '/web/new_index/index')
+    res.render(__dirname + '/web/index/index')
 })
 
 module.exports = router
