@@ -2,21 +2,30 @@ doctype html
 html
     head
         title Raj Patel
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        link(rel='icon', href='images/r_logo_icon.ico')
         link(rel='stylesheet', href='css/onepage-scroll.css')
         link(rel='stylesheet', href='css/index.css')
         link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Jura')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
         script(src='https://code.jquery.com/jquery-3.4.1.min.js')
         script(src='js/lib/jquery.onepage-scroll.js')
         script(src='js/index.js')
     body
-        //div
-        //    p Copyright
+        div#header
+            p.header_title Raj Patel
+            div.header_subtitle
+                p 435.215.5919
+                p &nbsp;&mdash;&nbsp;
+                p rajpatel0820@gmail.com
+                p &nbsp;&mdash;&nbsp;
+                a(href="https://www.linkedin.com/in/raj-patel-0820")
+                    i.fa.fa-linkedin-square
+
         div.main
             section
                 include includes/about
             section
                 include includes/experience
-            section
-                include includes/education
             section
                 include includes/resume
