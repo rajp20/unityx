@@ -20,7 +20,19 @@
     margin: 0;
 }
 
+.company {
+    margin: 0;
+    color: #474952;
+}
+
 .job-description {
     flex-wrap: wrap;
     width: 30vw;
+    margin: 10px;
+    padding: 0;
+    list-style: circle;
+}
+
+.job-description li {
+    margin: 3px;
 }
